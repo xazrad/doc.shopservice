@@ -1,3 +1,4 @@
+==================
 API "Shop-Service"
 ==================
 
@@ -15,7 +16,8 @@ Content-Type:
 
 application/x-www-form-urlencoded (Для POST)
 
-## Request
+Request
+--------
 
 Параметры запроса:
 
@@ -30,28 +32,27 @@ application/x-www-form-urlencoded (Для POST)
   * count - количество элементов на странице. По умолчанию 50
 
 
-## Response
+Response
+---------
 
-Пример:
+Пример::
 
-```javascript
-{
-  "metadata": [
-    "_id",
-    "name"
-  ],
-  "data": [
-    [
-      "1",
-      "Первый"
+  {
+    "metadata": [
+      "_id",
+      "name"
     ],
-    [
-      "2",
-      "Второй"
-    ]
-  ],
-  "is_last_page": true,
-  "total_count": 2
-}
-```
+    "data": [
+      [
+        "1",
+        "Первый"
+      ],
+      [
+        "2",
+        "Второй"
+      ]
+    ],
+    "is_last_page": true,
+    "total_count": 2
+  }
 
